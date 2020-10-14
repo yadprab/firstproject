@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap");
+:root {
+  --prim1: #FAFAFA;
+  --prim2: #F5F5F5;
+  --prim3: #EEEEEE;
+  --prim4: #E0E0E0;
+  --primD1: #757575;
+  --primD2: #616161;
+  --primD3: #424242;
+  --primD4: #212121;
+  --butPrim: #78909C;
+  --butPrim2: #607D8B;
+  --font1: 'Roboto', sans-serif;
+  --font2: 'Roboto Condensed', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    line-height: 1.5;
+     background-color: var(--prim1);
+  
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prim2);
+ 
+}
+#title{
+    margin: 0.5em;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--font2);
+    font-weight: 700;
+    color: var(--primD4);
+    letter-spacing: 3px;
+
+}
+
+#img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    background-color: var(--prim3);
+}
+#img-caption{
+    margin: 0.5em;
+    text-transform: capitalize;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--primD3);
+    font-size: 0.8rem;
+}
+
+main{
+    padding: 4em 1em;
+    
+}
+
+#about{
+  
+    background-color: var(--primD4);
+    padding: 2em;
+    color: var(--prim2);
+    margin-bottom: 1em;
+    
+}
+#about h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+   
+    
+}
+span{
+    display: block;
+    letter-spacing: 2px;
+}
+
+li{
+    margin: 1em;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: var(--font1);
+}
+
+#tribute-info{
+    
+    background-color: var(--prim2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+#tribute-info h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+
+}
+
+.cards{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+  grid-template-rows: repeat(370px);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+
+   
+   
+}
+.card{
+   margin-top: 2em;
+    background-color: var(--primD4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    border-radius: 10px;
+    color: var(--prim1);
+    margin-bottom: 1em;
+ 
+}
+.img-area{
+ width: 100px;
+ height: 100px;
+background-color: white;
+border-radius: 50%;
+margin-top: -50px;
+ background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    position: relative;
+    border: 10px solid var(--primD4);
+    align-self: start;
+   
+}
+
+#aliya{
+    background-image:url(ship1.1.jpg) ;
+}
+#neeraj{
+    background-image:url(2.jpg) ;
+}
+#navin{
+    background-image:url(9.jpg) ;
+}
+h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+article{
+    padding: 1em;
+    font-family: var(--font2);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+   
+
+}
+#tribute{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: var(--font2);
+    text-align: center;
+    margin-top: 1em;
+
+}
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--primD3);
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+a:hover{
+    color: var(--primD4);
+}
